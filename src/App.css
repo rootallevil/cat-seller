@@ -1,38 +1,160 @@
 .App {
   text-align: center;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1 {
+  color: #ff3a54;
+  font-size: 40px;
+  margin: 0;
+  margin-top: 8vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Header */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 10vh;
+  background: #ff3a54;
 }
 
-.App-link {
-  color: #61dafb;
+.Header h2 {
+  color: #fff;
+  font-size: 25px;
+  margin: auto;
+  font-weight: 100;
+  margin-right: 40vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Header ul {
+  margin: auto;
+  width: 25vw;
+  display: flex;
+}
+
+.Header ul li {
+  list-style: none;
+  color: #fff;
+  margin: auto;
+  font-size: 18px;
+}
+
+/* Cards */
+
+.catsContainer {
+  margin: auto;
+  margin-bottom: 10vh;
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.catCard {
+  margin: auto;
+  margin-top: 5vh;
+  width: 25%;
+  padding: 3vh 3%;
+}
+
+.catCard:hover {
+  box-shadow: 3px 3px 8px #ccc, -3px -3px 8px #ccc;
+  border-radius: 5px;
+}
+
+.catCard img {
+  height: 200px;
+  width: auto;
+  margin: auto;
+}
+
+.catCard button {
+  height: 40px;
+  width: 120px;
+  border: none;
+  background: #ff3a54;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto;
+  margin-bottom: 2vh;
+  font-size: 16px;
+  box-shadow: 2px 3px 5px #aaa;
+}
+
+.catDesc {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  height: 80vh;
+}
+
+.catDesc img {
+  height: 400px;
+  width: auto;
+  margin: auto;
+}
+
+.aboutCat {
+  margin: auto;
+}
+
+/* Footer */
+
+.footer {
+  height: 10vh;
+  background: #ddd;
+  display: flex;
+}
+
+.footer p {
+  margin: auto;
+  font-size: 16px;
+}
+
+/* About */
+
+.about {
+  height: 72vh;
+}
+
+/* Search */
+
+.searchBar {
+  width: 60%;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+.searchBar form {
+  display: flex;
+  width: 100%;
+}
+
+.searchBar form input[type="text"] {
+  flex: 5;
+  padding: 8px;
+  font-size: 16px;
+  height: 4vh;
+}
+
+.searchBar form input[type="submit"] {
+  flex: 1;
+  border: none;
+  background: #00c070;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 1vw;
+  font-size: 16px;
+}
+
+/* Cart */
+
+.cartContainer {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  min-height: 75vh;
+  margin-bottom: 5vh;
 }

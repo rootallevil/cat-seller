@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cats Data</title>
+  </head>
+  <body>
+    <div id="data"></div>
+
+    <script>
+      const div = document.getElementById("data");
+      const jsonobj = [
+        {
+          id: 1,
+          name: "Whiskerson",
+          img: "https://pngimg.com/uploads/cat/cat_PNG50497.png",
+          desc: "A good pussy cat with exceptional cuteness and meowing skills."
+        },
+        {
+          id: 2,
+          name: "Puss in boots",
+          img: "https://data.whicdn.com/images/119232616/original.png",
+          desc: "A good pussy cat with exceptional cuteness and meowing skills."
+        },
+        {
+          id: 3,
+          name: "Purrfume",
+          img:
+            "https://www.freepngimg.com/thumb/cat/22193-3-adorable-cat-thumb.png",
+          desc: "A good pussy cat with exceptional cuteness and meowing skills."
+        },
+        {
+          id: 4,
+          name: "Meowth",
+          img: "https://www.freepngimg.com/thumb/cat/11-2-cat-png-thumb.png",
+          desc: "A good pussy cat with exceptional cuteness and meowing skills."
+        },
+        {
+          id: 5,
+          name: "Fluffy",
+          img: "https://pluspng.com/img-png/cat-png-cat-png-hd-1500.png",
+          desc: "A good pussy cat with exceptional cuteness and meowing skills."
+        },
+        {
+          id: 6,
+          name: "Nibbi",
+          img:
+            "https://media.tenor.com/images/d13529b7951e066c49b9c55d9897786e/tenor.png",
+          desc: "A good pussy cat with exceptional cuteness and meowing skills."
+        }
+      ];
+
+      div.innerHTML = JSON.stringify(jsonobj);
+    </script>
+  </body>
+</html>
